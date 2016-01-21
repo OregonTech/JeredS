@@ -83,11 +83,13 @@ def get_square_type(a=0, b=0, c=0, d=0):
     if a <= 0 or b <= 0 or c <= 0 or d <= 0:
         return "invalid"
 
-    if a == b and b == c and c == d and d == a:
+    if a == b and b == c and c == d:
         return "square"
 
     elif a == c and b == d:
         return "rectangle"
 
+    else:
+        return "invalid"
     # elif a == c and b == d:
     #     return "rhombus"
